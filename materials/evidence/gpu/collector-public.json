@@ -1,0 +1,59 @@
+{
+  "data": {
+    "benchmark_report_sha256": "6b511eec444a257cd920751e7de10bc40f856d7638aac125a9be6697aa46226e",
+    "checkpoint_sha256": "300b1c0ba907fa90ceacc38693713789cfb2a8b83248fd585fadb0d059381fdd",
+    "export_sha256": {
+      "candidate-calibration": {
+        "embedding_order.json": "7d28b632c148697ba09a68314b36cd451b5a4414d8b05ee2fa47d25227d0e261",
+        "embeddings.npy": "2af46f267daa1d6767ea1c4e0987587e60480084de01222cd26099ae6b9d8956",
+        "provenance.json": "aa002c9082f8622daaf555860844dc0976e0a36b57baee40ae26515a6db907b7",
+        "query-single-embeddings.npy": "2e5d55dc6297ce154f0acf083cb33424c836ad698c119f0157a33571e6b84fd1"
+      },
+      "candidate-control": {
+        "embedding_order.json": "5544fbf8489bc4acee48fe2f48abad5f34891677db7fe839e211a79a84a19f8c",
+        "embeddings.npy": "aa29af32128023c46e68abe3911b844bc22f3716311ff4a1583ee5a5eed751b6",
+        "provenance.json": "ba2777329daf2eea42caaab3361c3df6f6c14204bf35faeb6fa2320869ffee05",
+        "query-single-embeddings.npy": "a997c32aa6bad52a1961fa54298fa6dafcba1584b204c4af7b18a57a53708b94"
+      }
+    },
+    "gpu_measured": true,
+    "independent_quality_claim_allowed": false,
+    "labels_read": false,
+    "metric_claim": "none; candidate embeddings require frozen postprocessing replay",
+    "model": {
+      "device": "cuda",
+      "dimension": 384,
+      "inference_fingerprint": "24c3e126d4eabfeb5faf3a4f4c372f866cb586ae78d9df901b687ef951b8936f",
+      "name": "Owned DINOv3-S+256 compact ReID",
+      "sha256": "300b1c0ba907fa90ceacc38693713789cfb2a8b83248fd585fadb0d059381fdd",
+      "version": "stand-5"
+    },
+    "quality_accepted": false,
+    "schema_version": 1,
+    "selection_lock_sha256": "a4bff930e1fab9f9556d544f73d05f5534c710f9563d9978f8c35724235b77ca",
+    "speed_winner": "workers4-fp32",
+    "stage": "completed",
+    "status": "completed",
+    "weights": {
+      "files": [
+        {
+          "bytes": 118036485,
+          "file": "/native/training/compact.pt",
+          "role": "complete_runtime_checkpoint",
+          "sha256": "300b1c0ba907fa90ceacc38693713789cfb2a8b83248fd585fadb0d059381fdd"
+        }
+      ],
+      "limit_bytes": 2000000000,
+      "model_sha256": "300b1c0ba907fa90ceacc38693713789cfb2a8b83248fd585fadb0d059381fdd",
+      "scope": "Complete compact backbone/projection; no teacher or training classifier loaded at inference.",
+      "source": "owned_compact_checkpoint",
+      "status": "verified",
+      "total_bytes": 118036485
+    }
+  },
+  "derived_public_projection": true,
+  "note": "Selected public fields only; local workstation paths and unrelated experiments omitted. Original source is not rewritten.",
+  "schema_version": 1,
+  "source_file": "evidence/fps-r2/results/acceptance-vectors/collector-report.json",
+  "source_sha256": "2853019655f3999ce851dc120178a618c55067413c26f24a231c2fdd2cea2e88"
+}

@@ -1,0 +1,29 @@
+{
+  "checkpoint_sha256": "300b1c0ba907fa90ceacc38693713789cfb2a8b83248fd585fadb0d059381fdd",
+  "derived_export": true,
+  "e27_web_docker_acceptance": false,
+  "encoder_gpu_measured": true,
+  "files_sha256": {
+    "candidates.csv": "526b4d8ee645adca5a8c621e29a20ee6fee11cc7bd311316565eeb9ff67b093e",
+    "embedding_order.json": "7d28b632c148697ba09a68314b36cd451b5a4414d8b05ee2fa47d25227d0e261",
+    "embeddings.npy": "2af46f267daa1d6767ea1c4e0987587e60480084de01222cd26099ae6b9d8956",
+    "gallery.csv": "ee500163d652aefcd8129f11e520cdc10e6cb3016506bdbd92e0155288e8b514",
+    "ground_truth.csv": "8c8df5e6f8430e5182f9111d02f08c5ced48917a4cfa8a9a3936a5e6fa77eeab",
+    "official_report.json": "e572aa5265a69867f43e2e4f170a606f63758fb21c151908bdd46351961566f0",
+    "query-single-embeddings.npy": "2e5d55dc6297ce154f0acf083cb33424c836ad698c119f0157a33571e6b84fd1",
+    "query.csv": "4a9a8e27397bbc3cf2a938531a1d7d9b5837527b1f15d964c1a13b595959b8ce",
+    "submission.csv": "01b53437e75f10dfbfd5521964c6b1385cad62e5a607f454113011b47835f23d"
+  },
+  "historical_control_used_in_research": true,
+  "independent_holdout": false,
+  "postprocessing_evaluated_on_cpu": true,
+  "schema_version": 1,
+  "scope": "Serialized accepted decisions and original accelerated GPU FP32 vectors; quality was scored by the prior strict CPU acceptance, no new inference or scoring performed during packaging.",
+  "source_sha256": {
+    "acceptance_report": "2307cd2cd5cdb56c35067a2246fb65dc0c87e780e0576fd8bf7cc9fce5d72790",
+    "accepted_decisions": "af8d482010aae0875debe8bc3cba7423462e9ebccdba5e49d682bbc2b86edc7f",
+    "gpu_collector_provenance": "aa002c9082f8622daaf555860844dc0976e0a36b57baee40ae26515a6db907b7",
+    "gpu_embeddings": "2af46f267daa1d6767ea1c4e0987587e60480084de01222cd26099ae6b9d8956"
+  },
+  "threshold": 0.713592811641558
+}

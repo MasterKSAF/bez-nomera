@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "verified_previous_gpu_run",
+  "teacher_sha256": "ce273cd167a04e10d461b72e295193d3c1ca8dbda8efaf8e10e0214a018bf94d",
+  "cache_sha256": "519ca7077006a2ae8d4fdc26e650a715042234be28c636cb2b918fcb3e3cac6c",
+  "embeddings_sha256": "b51271cd8b43f478d590f888a34785cbe9401f62012d926668487bc81fd04498",
+  "rows": 6804,
+  "dimension": 1024,
+  "source_archive_sha256": "428993c016500d695af43f1bd84300b8271dd9587ae26b31c1e834d719d93812",
+  "source_member": "results/stand-3/trial/teacher-train-cache",
+  "source_receipt_sha256": "d2c961086334a002197feca474bad65a73cf67aea4001eb00254eb9d31afdba6",
+  "teacher_retrieval_used_for_targets": false,
+  "augmentation": "original_crop_only",
+  "independent_quality_claim_allowed": false
+}

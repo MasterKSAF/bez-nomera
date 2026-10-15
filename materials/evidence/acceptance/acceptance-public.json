@@ -1,0 +1,283 @@
+{
+  "data": {
+    "accepted": true,
+    "automatic_submission": false,
+    "calibration": {
+      "accepted_top1_equal": true,
+      "candidate_official": {
+        "candidates": {
+          "F1": 0.9074074074074074,
+          "FN": 10,
+          "FP": 0,
+          "PR-AUC": 0.9769877469087843,
+          "Precision": 1.0,
+          "Recall": 0.8305084745762712,
+          "TN": 14,
+          "TNR": 1.0,
+          "TP": 49,
+          "n_openset_queries": 14
+        },
+        "ranking": {
+          "Rank-1": 0.711864406779661,
+          "Rank-5": 0.7796610169491526,
+          "mAP@10": 0.7189500941619587,
+          "n_openset_excluded": 14,
+          "n_scored": 59
+        }
+      },
+      "changed_decision_queries": [],
+      "changed_top10_queries": [],
+      "gallery_count": 612,
+      "native_matches_frozen_study": true,
+      "native_official": {
+        "candidates": {
+          "F1": 0.9074074074074074,
+          "FN": 10,
+          "FP": 0,
+          "PR-AUC": 0.9769877469087843,
+          "Precision": 1.0,
+          "Recall": 0.8305084745762712,
+          "TN": 14,
+          "TNR": 1.0,
+          "TP": 49,
+          "n_openset_queries": 14
+        },
+        "ranking": {
+          "Rank-1": 0.711864406779661,
+          "Rank-5": 0.7796610169491526,
+          "mAP@10": 0.7189500941619587,
+          "n_openset_excluded": 14,
+          "n_scored": 59
+        }
+      },
+      "numeric": {
+        "max_abs": 2.1960586309432983e-06,
+        "max_accepted_confidence_abs": 7.144827093297224e-07,
+        "minimum_cosine": 0.9999999999259852,
+        "passed": true
+      },
+      "official_metrics_equal": true,
+      "passed": true,
+      "query_count": 73,
+      "top10_equal": true
+    },
+    "calibration_single_query": {
+      "accepted_top1_equal": true,
+      "candidate_official": {
+        "candidates": {
+          "F1": 0.9074074074074074,
+          "FN": 10,
+          "FP": 0,
+          "PR-AUC": 0.9769877469087843,
+          "Precision": 1.0,
+          "Recall": 0.8305084745762712,
+          "TN": 14,
+          "TNR": 1.0,
+          "TP": 49,
+          "n_openset_queries": 14
+        },
+        "ranking": {
+          "Rank-1": 0.711864406779661,
+          "Rank-5": 0.7796610169491526,
+          "mAP@10": 0.7189500941619587,
+          "n_openset_excluded": 14,
+          "n_scored": 59
+        }
+      },
+      "changed_decision_queries": [],
+      "changed_top10_queries": [],
+      "gallery_count": 612,
+      "native_matches_frozen_study": true,
+      "native_official": {
+        "candidates": {
+          "F1": 0.9074074074074074,
+          "FN": 10,
+          "FP": 0,
+          "PR-AUC": 0.9769877469087843,
+          "Precision": 1.0,
+          "Recall": 0.8305084745762712,
+          "TN": 14,
+          "TNR": 1.0,
+          "TP": 49,
+          "n_openset_queries": 14
+        },
+        "ranking": {
+          "Rank-1": 0.711864406779661,
+          "Rank-5": 0.7796610169491526,
+          "mAP@10": 0.7189500941619587,
+          "n_openset_excluded": 14,
+          "n_scored": 59
+        }
+      },
+      "numeric": {
+        "max_abs": 2.1960586309432983e-06,
+        "max_accepted_confidence_abs": 3.3871612525882e-07,
+        "minimum_cosine": 0.9999999999259852,
+        "passed": true
+      },
+      "official_metrics_equal": true,
+      "passed": true,
+      "query_count": 73,
+      "top10_equal": true
+    },
+    "candidate_binding": {
+      "batch_size": 32,
+      "extraction_mode": "fast",
+      "inference_fingerprint": "53c37f1d0b55d5b95db833c10ca0fc901db2474670f9afadf4a6065bacba9dfb",
+      "precision": "fp32",
+      "selection_lock_sha256": "a4bff930e1fab9f9556d544f73d05f5534c710f9563d9978f8c35724235b77ca",
+      "workers": 4
+    },
+    "control": {
+      "accepted_top1_equal": true,
+      "candidate_official": {
+        "candidates": {
+          "F1": 0.9026548672566371,
+          "FN": 9,
+          "FP": 2,
+          "PR-AUC": 0.9826408539504752,
+          "Precision": 0.9622641509433962,
+          "Recall": 0.85,
+          "TN": 15,
+          "TNR": 1.0,
+          "TP": 51,
+          "n_openset_queries": 15
+        },
+        "ranking": {
+          "Rank-1": 0.8225806451612904,
+          "Rank-5": 0.9354838709677419,
+          "mAP@10": 0.8213928358081584,
+          "n_openset_excluded": 15,
+          "n_scored": 62
+        }
+      },
+      "changed_decision_queries": [],
+      "changed_top10_queries": [],
+      "gallery_count": 324,
+      "native_matches_frozen_study": true,
+      "native_official": {
+        "candidates": {
+          "F1": 0.9026548672566371,
+          "FN": 9,
+          "FP": 2,
+          "PR-AUC": 0.9826408539504752,
+          "Precision": 0.9622641509433962,
+          "Recall": 0.85,
+          "TN": 15,
+          "TNR": 1.0,
+          "TP": 51,
+          "n_openset_queries": 15
+        },
+        "ranking": {
+          "Rank-1": 0.8225806451612904,
+          "Rank-5": 0.9354838709677419,
+          "mAP@10": 0.8213928358081584,
+          "n_openset_excluded": 15,
+          "n_scored": 62
+        }
+      },
+      "numeric": {
+        "max_abs": 2.689659595489502e-06,
+        "max_accepted_confidence_abs": 5.830961123942657e-07,
+        "minimum_cosine": 0.9999999998437579,
+        "passed": true
+      },
+      "official_metrics_equal": true,
+      "passed": true,
+      "query_count": 77,
+      "top10_equal": true
+    },
+    "control_single_query": {
+      "accepted_top1_equal": true,
+      "candidate_official": {
+        "candidates": {
+          "F1": 0.9026548672566371,
+          "FN": 9,
+          "FP": 2,
+          "PR-AUC": 0.9826408539504752,
+          "Precision": 0.9622641509433962,
+          "Recall": 0.85,
+          "TN": 15,
+          "TNR": 1.0,
+          "TP": 51,
+          "n_openset_queries": 15
+        },
+        "ranking": {
+          "Rank-1": 0.8225806451612904,
+          "Rank-5": 0.9354838709677419,
+          "mAP@10": 0.8213928358081584,
+          "n_openset_excluded": 15,
+          "n_scored": 62
+        }
+      },
+      "changed_decision_queries": [],
+      "changed_top10_queries": [],
+      "gallery_count": 324,
+      "native_matches_frozen_study": true,
+      "native_official": {
+        "candidates": {
+          "F1": 0.9026548672566371,
+          "FN": 9,
+          "FP": 2,
+          "PR-AUC": 0.9826408539504752,
+          "Precision": 0.9622641509433962,
+          "Recall": 0.85,
+          "TN": 15,
+          "TNR": 1.0,
+          "TP": 51,
+          "n_openset_queries": 15
+        },
+        "ranking": {
+          "Rank-1": 0.8225806451612904,
+          "Rank-5": 0.9354838709677419,
+          "mAP@10": 0.8213928358081584,
+          "n_openset_excluded": 15,
+          "n_scored": 62
+        }
+      },
+      "numeric": {
+        "max_abs": 2.689659595489502e-06,
+        "max_accepted_confidence_abs": 3.8685118353143366e-07,
+        "minimum_cosine": 0.9999999998437579,
+        "passed": true
+      },
+      "official_metrics_equal": true,
+      "passed": true,
+      "query_count": 77,
+      "top10_equal": true
+    },
+    "control_used_for_selection": false,
+    "locked_policy": {
+      "alpha": 0.5,
+      "reject_all": false,
+      "threshold": 0.713592811641558
+    },
+    "locked_recipe": {
+      "gallery_neighbors": 4,
+      "k1": 5,
+      "kind": "krecip",
+      "lambda_value": 0.6,
+      "mix": 0.25,
+      "name": "gallery-4nn-mix0.25-krecip-5-0.6",
+      "top_k": 50
+    },
+    "new_independent_quality_claim": false,
+    "notes": [
+      "Passing preserves the frozen historical quality; it does not reach mAP83/F1 92 targets.",
+      "No threshold/recipe was fitted, and no quality-driven candidate selection is performed."
+    ],
+    "quality_targets_claimed_met": false,
+    "recipe_selected": false,
+    "schema_version": 1,
+    "scope": "CPU replay of actual GPU FP32 candidate vectors against frozen historical regression",
+    "selection_lock_sha256": "a4bff930e1fab9f9556d544f73d05f5534c710f9563d9978f8c35724235b77ca",
+    "stage": "completed",
+    "status": "completed",
+    "threshold_fitted": false
+  },
+  "derived_public_projection": true,
+  "note": "Selected public fields only; local workstation paths and unrelated experiments omitted. Original source is not rewritten.",
+  "schema_version": 1,
+  "source_file": "evidence/acceptance/acceptance-report.json",
+  "source_sha256": "2307cd2cd5cdb56c35067a2246fb65dc0c87e780e0576fd8bf7cc9fce5d72790"
+}

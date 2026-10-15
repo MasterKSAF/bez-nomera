@@ -1,0 +1,12 @@
+{
+  "README.md": "1c807c720f0fd57a368a083b18038acce01ad662f5795dffaf55fd8f31470cf6",
+  "inputs/dev_gallery.csv": "b4dfddf0f7bd9d284035e1c618d9415fa047a949ef06dd1389b9d0704fb56e30",
+  "inputs/dev_ground_truth.csv": "42557e0ef07aff3cba37ddad0316e9a87f55eb52c3bdd859d3774ce22bb82327",
+  "inputs/dev_query.csv": "e6d5597f5de5507bee800175bfc1baf7358e634ce21e5f4fe3ff4ae40801afac",
+  "inputs/identity-map.csv": "6c567cb5f182fa6a4573bd1af0ceb98b946c25e89730564ab14ed9de022b02a4",
+  "inputs/train.csv": "ab941b00912046d291ffa1746e0dfbd9cf2f24e02a5b52366ce41ed36d5eab2f",
+  "inputs/val.csv": "d1c44fdd73c5035583923e27c0d127db371bf11e00871156b7c95bacb91f326c",
+  "teacher-train-cache/cache.json": "519ca7077006a2ae8d4fdc26e650a715042234be28c636cb2b918fcb3e3cac6c",
+  "teacher-train-cache/embeddings.npy": "b51271cd8b43f478d590f888a34785cbe9401f62012d926668487bc81fd04498",
+  "teacher-train-cache/receipt.json": "cbaf1f92ce34cee8cdbcb68b512db843508fb263017d5ad0290c19293413783b"
+}

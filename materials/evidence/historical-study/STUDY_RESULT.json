@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "derived_public_projection": true,
+  "source_file": "original-quality-study/STUDY_RESULT.json",
+  "source_sha256": "0cff3322acd0fd2aa71295f652a857344645bffb06d5f50ebfe51833f84c9df0",
+  "note": "Public projection preserving recipe provenance and all recorded before/after metrics. Internal aspirational targets and historical packaging readiness are omitted. Original study is unchanged.",
+  "data": {
+    "schema_version": 1,
+    "status": "completed",
+    "selected_stand": 5,
+    "recipe": {
+      "name": "gallery-4nn-mix0.25-krecip-5-0.6",
+      "kind": "krecip",
+      "top_k": 50,
+      "k1": 5,
+      "lambda_value": 0.6,
+      "gallery_neighbors": 4,
+      "mix": 0.25
+    },
+    "global_selection_sha256": "a814c0810a5ec525d9aa398c7383ab0f7b1f61380016e520ce6d903dc9422d0a",
+    "reranker_lock_sha256": "357f7bb0231707a1fb9e246b8030c42e3ca3ffadc094d4d9ccae11bf1229548e",
+    "native_report_sha256": "2c9b5fb42a28694b0f64c1545448f850e48a34448a8895c025b8dfe2c39432c1",
+    "replay_report_sha256": "80d3df8f252a4804b493912cb5aa0113bb21082e22719ca8906ef1ad017fb7dd",
+    "before": {
+      "ranking": {
+        "n_scored": 62,
+        "n_openset_excluded": 15,
+        "mAP@10": 0.787711213517665,
+        "Rank-1": 0.7903225806451613,
+        "Rank-5": 0.8870967741935484
+      },
+      "full_ranking": {
+        "mAP_full": 0.7883106408577272,
+        "mINP": 0.7337871556982586,
+        "n_scored": 62
+      },
+      "candidates": {
+        "TP": 56,
+        "FP": 1,
+        "FN": 6,
+        "TN": 14,
+        "n_openset_queries": 15,
+        "Precision": 0.9824561403508771,
+        "Recall": 0.9032258064516129,
+        "F1": 0.9411764705882352,
+        "TNR": 0.9333333333333333,
+        "PR-AUC": 0.9867130486114782
+      }
+    },
+    "after": {
+      "ranking": {
+        "n_scored": 62,
+        "n_openset_excluded": 15,
+        "mAP@10": 0.8213928358081584,
+        "Rank-1": 0.8225806451612904,
+        "Rank-5": 0.9354838709677419
+      },
+      "candidates": {
+        "TP": 51,
+        "FP": 2,
+        "FN": 9,
+        "TN": 15,
+        "n_openset_queries": 15,
+        "Precision": 0.9622641509433962,
+        "Recall": 0.85,
+        "F1": 0.9026548672566371,
+        "TNR": 1.0,
+        "PR-AUC": 0.9826408539504752
+      }
+    },
+    "original_baseline_reproduced": true,
+    "new_training_performed": false,
+    "new_GPU_benchmark_performed": false,
+    "new_independent_holdout": false,
+    "CPU_DEV_vs_GPU_numerical_parity_established": false,
+    "scope": "Historical CPU replay of saved GPU embeddings with official evaluation; comparison of original and selected postprocessing, not a new GPU pipeline test or an independent holdout."
+  }
+}

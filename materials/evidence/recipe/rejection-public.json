@@ -1,0 +1,34 @@
+{
+  "data": {
+    "control_opened": false,
+    "control_used_for_selection": false,
+    "frozen_at_utc": "2026-09-29T01:27:10.901785+00:00",
+    "neighbours": 3,
+    "objective": "hard TNR >= 0.95, then maximum official query F1",
+    "required_true_negatives": 14,
+    "schema_version": 1,
+    "selected": {
+      "alpha": 0.5,
+      "feasible": true,
+      "margin": 0.003748826338394906,
+      "metrics": {
+        "F1": 0.9074074074074074,
+        "FN": 10,
+        "FP": 0,
+        "TN": 14,
+        "TNR": 1.0,
+        "TP": 49,
+        "points": 9.351851851851851
+      },
+      "reject_all": false,
+      "threshold": 0.713592811641558
+    },
+    "status": "frozen",
+    "unknown_count": 14
+  },
+  "derived_public_projection": true,
+  "note": "Selected public fields only; local workstation paths and unrelated experiments omitted. Original source is not rewritten.",
+  "schema_version": 1,
+  "source_file": "evidence/quality/rejection-lock.json",
+  "source_sha256": "9e560082161446f39ff1487f52b1dbc9b37ccba3a0e0026fc5099392980bc245"
+}

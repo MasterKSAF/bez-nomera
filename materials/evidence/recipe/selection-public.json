@@ -1,0 +1,27 @@
+{
+  "data": {
+    "calibration_or_control_used_for_selection": false,
+    "frozen_at_utc": "2026-09-29T01:27:09.039385+00:00",
+    "independent_quality_claim_allowed": false,
+    "schema_version": 1,
+    "selected_recipe": {
+      "gallery_neighbors": 4,
+      "k1": 5,
+      "kind": "krecip",
+      "lambda_value": 0.6,
+      "mix": 0.25,
+      "name": "gallery-4nn-mix0.25-krecip-5-0.6",
+      "top_k": 50
+    },
+    "selected_reranker_lock_sha256": "357f7bb0231707a1fb9e246b8030c42e3ca3ffadc094d4d9ccae11bf1229548e",
+    "selected_stand": 5,
+    "selection": "highest official dev mAP@10 across the two dev-only fitted encoders; exact tie favors current baseline, then raw cosine, then fewer gallery neighbors and smaller k1/lambda, then lower stand ID",
+    "selection_split": "original_dev_only",
+    "status": "frozen"
+  },
+  "derived_public_projection": true,
+  "note": "Selected public fields only; local workstation paths and unrelated experiments omitted. Original source is not rewritten.",
+  "schema_version": 1,
+  "source_file": "evidence/quality/global-selection-lock.json",
+  "source_sha256": "a814c0810a5ec525d9aa398c7383ab0f7b1f61380016e520ce6d903dc9422d0a"
+}

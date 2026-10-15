@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "derived_public_projection": true,
+  "source_file": "original-handoff/SELECTED.json",
+  "source_sha256": "89836703d9272af04d3be98da2f50fd36654dbdf80c55a6cc7e8d6995bb3c135",
+  "note": "Public projection of the recorded selection. Actual model/configuration, quality, measured performance and original evidence hashes are retained; historical packaging statuses and internal target thresholds are omitted. Original handoff is unchanged.",
+  "data": {
+    "selected_at_utc": "2026-09-29T11:11:39.401656+00:00",
+    "quality_accepted": true,
+    "model": {
+      "stand": 5,
+      "checkpoint": "weights/compact.pt",
+      "sha256": "300b1c0ba907fa90ceacc38693713789cfb2a8b83248fd585fadb0d059381fdd",
+      "bytes": 118036485,
+      "dimension": 384,
+      "inference_fingerprint": "53c37f1d0b55d5b95db833c10ca0fc901db2474670f9afadf4a6065bacba9dfb"
+    },
+    "extraction": {
+      "mode": "fast",
+      "precision": "fp32",
+      "workers": 4,
+      "batch_size": 32,
+      "pin_memory": true,
+      "torch_cpu_threads": 2,
+      "tf32": false
+    },
+    "ranking": {
+      "gallery_neighbors": 4,
+      "k1": 5,
+      "kind": "krecip",
+      "lambda_value": 0.6,
+      "mix": 0.25,
+      "name": "gallery-4nn-mix0.25-krecip-5-0.6",
+      "top_k": 50
+    },
+    "rejection": {
+      "alpha": 0.5,
+      "reject_all": false,
+      "threshold": 0.713592811641558,
+      "neighbours": 3,
+      "support_gallery": "original_unit_embeddings_before_gallery_expansion"
+    },
+    "measured_performance": {
+      "gpu": {
+        "type": "cuda",
+        "name": "NVIDIA A10",
+        "torch": "2.8.0+cu126",
+        "cuda": "12.6",
+        "logical_cpu_count": 4,
+        "torch_cpu_threads": 2
+      },
+      "best_fps": 119.54702326127283,
+      "latency_median_ms": 34.902913999985685,
+      "latency_p95_ms": 39.302235750000136,
+      "same_run_baseline_fps": 46.15810257828066,
+      "speedup_vs_same_run_baseline": 2.589946652562897,
+      "protocol": {
+        "warmup_calls": 50,
+        "latency_runs": 300,
+        "batches": [
+          1,
+          8,
+          16,
+          32
+        ],
+        "minimum_throughput_seconds": 10.0,
+        "cuda_synchronized": true,
+        "throughput_warmup_calls_per_batch": 1,
+        "scope": "file read, decode, bbox crop, preprocessing, H2D, forward, normalization, D2H",
+        "decoded_image_or_tensor_cache": false,
+        "os_page_cache_flushed": false,
+        "search_and_reranking_included": false
+      }
+    },
+    "historical_control": {
+      "candidates": {
+        "F1": 0.9026548672566371,
+        "FN": 9,
+        "FP": 2,
+        "PR-AUC": 0.9826408539504752,
+        "Precision": 0.9622641509433962,
+        "Recall": 0.85,
+        "TN": 15,
+        "TNR": 1.0,
+        "TP": 51,
+        "n_openset_queries": 15
+      },
+      "ranking": {
+        "Rank-1": 0.8225806451612904,
+        "Rank-5": 0.9354838709677419,
+        "mAP@10": 0.8213928358081584,
+        "n_openset_excluded": 15,
+        "n_scored": 62
+      }
+    },
+    "evidence_sha256": {
+      "benchmark_report": "6b511eec444a257cd920751e7de10bc40f856d7638aac125a9be6697aa46226e",
+      "fps_selection_lock": "a4bff930e1fab9f9556d544f73d05f5534c710f9563d9978f8c35724235b77ca",
+      "collector_report": "2853019655f3999ce851dc120178a618c55067413c26f24a231c2fdd2cea2e88",
+      "acceptance_report": "2307cd2cd5cdb56c35067a2246fb65dc0c87e780e0576fd8bf7cc9fce5d72790"
+    },
+    "provenance": "Preserve DINOv3/timm license and attribution; implementation is from our own recorded experiment.",
+    "measurement_scope": {
+      "quality": "Official evaluator applied on CPU to saved GPU descriptors; historical control 77 queries / 324 gallery images, not an independent holdout.",
+      "performance": "GPU encoder extraction measured on NVIDIA A10; includes file read, decode, crop, preprocessing, transfers, forward and normalization; excludes retrieval, reranking and HTTP.",
+      "integrated_E27_GPU_run_claimed": false
+    }
+  }
+}
