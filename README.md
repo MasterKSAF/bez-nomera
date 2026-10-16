@@ -87,3 +87,4 @@ docker compose run --rm export --images /data/images --query /data/test_query.cs
 - [Лицензии и источники](THIRD_PARTY.md).
 - [Состав сдачи](docs/SUBMISSION.md).
 
+Команда «Без номера»: Полина Артюхина — капитан; Оксана Калеева — разработчик.
